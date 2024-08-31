@@ -10,8 +10,6 @@ ob_start();
         <h1 class="title">Forgot Password</h1>
 
 
-
-
         <!-- Displaying the 'status' session message -->
         <?php if (isset($_SESSION['status'])): ?>
             <div class="alert alert-info">
@@ -22,7 +20,7 @@ ob_start();
             </div>
         <?php endif; ?>
 
-        <form method="POST" action="user-forgot-password-reset-code.php">
+        <form method="POST" action="admin-forgot-password-reset-code.php">
             <div class="input">
                 <label for="name">Email</label>
                 <input type="text" id="email" name="email" placeholder="Enter email" autocomplete="off" required>
@@ -36,7 +34,7 @@ ob_start();
             </div>
 
             <div class="links">
-                <span>Back to </span><a href="loginuser.php">login!</a>
+                <span>Back to </span><a href="login.php">login!</a>
             </div>
         </form>
         <img src="./Assests/logo2.png" alt="">

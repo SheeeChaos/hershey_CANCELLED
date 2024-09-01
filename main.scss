@@ -427,6 +427,13 @@ p{
 
            
         }
+        .loginbtn{
+            background: var(--yellowColor);
+            button .btn{
+                background: var(--yellowColor);
+                color: var(--whiteColor);
+            }
+        }
     }
 
     .toggleNavbar{
@@ -439,6 +446,8 @@ p{
             }
         }
     }
+
+   
 
 }
 

@@ -58,6 +58,12 @@ ob_start();
                                 <label for="Fname">Full Name</label>
                                 <input type="text" name="Fname" id="Fname"  placeholder="Enter Full Name" autocomplete="off" required>
                             </div>
+
+                            <div class="input">
+                                <label for="Fname">Name of Store</label>
+                                <input type="text" name="Fname" id="Fname"  placeholder="Enter your store" autocomplete="off" required>
+                            </div>
+
                             <div class="input">
                                 <label for="username">Username</label>
                                 <input type="text" id="username" name="username" placeholder="Enter Username" autocomplete="off" required>

@@ -80,6 +80,7 @@ ob_start();
                                         $sql = "SELECT * FROM cart WHERE session_id = '$sessionID'";
                                         $res = mysqli_query($conn, $sql);
                                         $subTotal = 0;
+                                        $totalPayment = 50;
                                         if($res==TRUE){
                                             $currentOrders = mysqli_num_rows($res);
                                 
@@ -161,7 +162,7 @@ ob_start();
                                 Total:
                             </span>
                             <span class="gradCost">
-                            ₱<?php echo $subTotal;?>
+                            ₱<?php echo $subTota + $codPayment;?>
                             </span>
                         </span>
 
@@ -176,7 +177,7 @@ ob_start();
 
                          <div class="updateOrderDiv">
                             <h3 class="updateOrderTitle flex">
-                                Upadate Order
+                                Update Order
                              </h3>
     
                             <form method="post">

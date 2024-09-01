@@ -33,6 +33,8 @@ ob_start();
                             $sql = "SELECT * FROM cart WHERE session_id = '$currentSession'";
                             $res = mysqli_query($conn, $sql);
                             $subTotal = 0;
+                            $codPayment = 50;
+
                             if($res==TRUE){
                                 $currentOrders = mysqli_num_rows($res);
                      
@@ -90,7 +92,8 @@ ob_start();
                 </div>
 
                 <div class="leftDiv grid">
-                <div class="paymentOption">
+
+                <!-- <div class="paymentOption">
                         <h3 class="title flex">Payment: <img src="./Assests/debit-card.png" alt="Icon"></h3>
                         <div class="optionDiv">
                             <div class="input flex">
@@ -100,13 +103,8 @@ ob_start();
                                </div>
                                 <label for="cod">Cash On Delivery: (Delivery fees: ₱50)</label>
                             </div>
-    
-                            
-
-                            
-                            
                         </div>
-                    </div>
+                    </div> -->
     
                     <div class="amountDiv">
                         
@@ -123,6 +121,16 @@ ob_start();
                             </span>
                            
                         </span>
+
+                        <span class="cartList flex">
+                            <span class="subTitle">
+                                Shipping fee:
+                            </span>
+                            <span class="cost">
+                            ₱<?php echo $codPayment?>
+                            
+                            </span>
+                        </span>
         
                         <span class="cartList flex">
                             <span class="subTitle">
@@ -131,7 +139,8 @@ ob_start();
                             <span class="gradCost">
                             <input type="hidden" name="cartID" value="<?php echo $cartID?>">
                             <input type="hidden" name="subTotal" value="<?php echo $subTotal?>">
-                            ₱<?php echo $subTotal?>
+                            <input type="hidden" name="codPayment" value="<?php echo $codPayment?>">
+                            ₱<?php echo $subTotal + $codPayment?>
                             </span>
                         </span>
                          

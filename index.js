@@ -42,6 +42,17 @@ function headerShadow (){
 }
 window.addEventListener('scroll', headerShadow)
 
+// // CHANGING NAVLINK BACKGROUND COLOR AFTER 20PX ON SCROLL Y AXIS
+// const NavlinkChange = document.getElementById('navLink');
+// function headerShadow (){
+
+//    if(this.scrollY >= 20)
+//        NavlinkChange.classList.add('navLinkColor')
+//    else
+//    NavlinkChange.classList.remove('navLinkColor')
+// }
+// window.addEventListener('scroll', headerShadow)
+
 
 // DISPLAY HEADER PHONE NUMBER 
 phoneIcon.addEventListener('click', ()=>{

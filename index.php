@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <?php 
 include('clientPartials/clientHeader.php');
 ob_start();
@@ -10,7 +11,7 @@ ob_start();
        }
     ?>
  
-    <section id="#home" class="home container">
+    <section id="#home" class="home">
 
         <div class="sectionContent grid">
             <div data-aos="fade-right"  class="homeText">
@@ -18,8 +19,7 @@ ob_start();
                     Enjoy <span>Groceries</span> At Your Door Step
                 </h1>
     
-                <p>We offer the best online portal that allows customers to order items online without visiting the Grocery Store.
-                </p>
+                <p>We offer the best online portal that allows customers to order items online without visiting the Grocery Store.</p>
     
                
                 <a href="menu.php" class="btn flex">  ORDER NOW  <i class="uil uil-arrow-right icon"></i> </a>
@@ -29,7 +29,7 @@ ob_start();
                 <img src="./Assests/Logo2.png" alt="Online Food Image">
             </div>
 
-            <img src="./Assests/floating1.png" alt="" class="floatingImg1">
+          
         </div>
        
     </section>
@@ -188,7 +188,7 @@ ob_start();
     <!-- About Section Ends -->
 
     <!-- Popular Food Items -->
-    <section class="section popular container">
+    <section id="popular" class="section popular">
         <div class="sectionContent">
             <div data-aos="fade-down" data-aos-duration="4000" class="sectionIntro">
                 <h2>Our Best Seller Items</h2>
@@ -262,8 +262,12 @@ ob_start();
         </div>
     </section>
     <!-- Popular Food Items Ends -->
-   
-
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" title="Go to top">
+      <i class="bi bi-chevron-up"></i>
+    </button>
+    <!-- Scroll to Top Button END -->
+    <script src="./scrollUp.js"></script>
 <?php 
 include('clientPartials/clientFooter.php');
 ?>

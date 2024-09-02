@@ -1,10 +1,11 @@
     <!-- Footer Section -->
-    <section class="container footer">
+    <section class="footer">
         <div class="sectionContent grid">
  
          <div class="footerIntro">
          <div class="logoDiv">
              <a href="#" class="logo">
+             <img src="./Assests/Logo2.png" alt="Online Food Image">
                 Hershey's Groceries
              </a>
          </div>
@@ -37,14 +38,15 @@
  
          </div>
         </div>
-    </section>
-    <!-- Footer Section Ends -->
-
     <!-- Copyright Div -->
     <section class="copyrightDiv">
         <p>ALL RIGHT RESERVED<script>document.write(new Date().getFullYear())</script></p>
     </section>
     <!-- Copyright Div Ends -->
+    </section>
+    <!-- Footer Section Ends -->
+
+
  
  
     <!-- Link to swiper JS -->

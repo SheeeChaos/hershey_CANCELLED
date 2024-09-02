@@ -1,7 +1,5 @@
 <?php 
 
-  session_start();
-
   define('SITEURL', 'http://localhost/hershey/');
 
   define('LOCALHOST', 'localhost');

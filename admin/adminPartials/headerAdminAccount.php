@@ -32,7 +32,7 @@
 ?>
 
 <div class="adminDiv flex">
-<a href='POS/index.php'><button class='btn'>POS</button></a>
+<a href='../POS/index.php'><button class='btn'>POS</button></a>
     <div class="notDiv">
         <i class='bx bxs-bell icon' title="New Product Order"></i>
         <span class="count" ><?php echo $currentOrders?></span>

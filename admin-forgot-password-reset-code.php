@@ -41,6 +41,7 @@ function send_password_reset($get_username, $get_email, $token)
 }
 
 if (isset($_POST['password_reset_link'])) {
+
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $token = md5(rand());
 
@@ -48,6 +49,7 @@ if (isset($_POST['password_reset_link'])) {
     $check_email_run = mysqli_query($conn, $check_email);
 
     if (mysqli_num_rows($check_email_run) > 0) {
+
         $row = mysqli_fetch_assoc($check_email_run);
         $get_username = $row['username']; // column from database
         $get_email = $row['email']; // column from database
@@ -56,7 +58,7 @@ if (isset($_POST['password_reset_link'])) {
         $update_token_run = mysqli_query($conn, $update_token);
 
         if ($update_token_run) {
-            send_password_reset($get_username, $get_email, $token);
+            send_password_reset($get_username, $get_email, $token); //FUNCTION FOR SEND PASSWORD RESET
             $_SESSION['status'] = "We emailed you the password reset";
             header("Location: adminforgotpassword.php");
             exit(0);

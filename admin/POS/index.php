@@ -1,5 +1,9 @@
-<?php include('server/connection.php'); ?>
-<?php include('login.php');?>
+
+<?php
+ include('login.php');
+ include('config/config.php'); // Update the path to include the config.php file
+ 
+ ?>
 <!DOCTYPE html>
 <html>
 <head>

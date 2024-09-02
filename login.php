@@ -70,10 +70,10 @@ if (isset($_POST['submit'])) {
 
             if ($row['role'] == 'manager') {
                 $_SESSION['loginMessage'] = '<span class="success">Welcome ' . $row['name'] . '!</span>';
-                header('location:' . SITEURL . 'admin/dashboard.php');
+                header('location:' . SITEURL . 'administrator/dashboard.php');
             } elseif ($row['role'] == 'admin') {
                 $_SESSION['loginMessage'] = '<span class="success">Welcome ' . $row['name'] . '!</span>';
-                header('location:' . SITEURL . 'dashboardU.php');
+                header('location:' . SITEURL . 'dashboard.php');
             }
             exit();
 

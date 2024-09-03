@@ -74,9 +74,7 @@ ob_start();
                 <a href="userforgotpassword.php">Forgot Password?</a>
             </div>
         </form>
-        
     </div>
-
 </div>
 
 <?php

@@ -5,7 +5,7 @@ ob_start();
 
 ?>
 
-<div class="section container loginPage flex">
+<div class="section loginPage flex">
     <div class="pageContent">
         <h1 class="title">Forgot Password</h1>
 

@@ -1,11 +1,10 @@
     <!-- Footer Section -->
-    <section class="footer">
+    <section class="footer container">
         <div class="sectionContent grid">
  
          <div class="footerIntro">
          <div class="logoDiv">
              <a href="#" class="logo">
-             <img src="./Assests/Logo2.png" alt="Online Food Image">
                 Hershey's Groceries
              </a>
          </div>

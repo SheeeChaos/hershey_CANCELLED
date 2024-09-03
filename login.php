@@ -3,7 +3,7 @@ include('clientPartials/clientHeaderuser.php');
 ob_start();
 ?>
 
-<div class="section container loginPage flex">
+<div class="section loginPage flex">
     <div class="pageContent">
         <h1 class="title">Login Administrator Here!</h1>
         <p>Please be authentic!</p>
@@ -35,12 +35,11 @@ ob_start();
                 <input type="password" id="password" name="passWord" placeholder="Enter Password">
             </div>
             <button class="btn flex" name="submit"> Login <i class="uil uil-signin icon"></i></button>
+            <br>
+            <div class="links"><a href="adminforgotpassword.php">Forgot Password?</a></div>
         </form>
-        <br><br>
 
-        <div class="links">
-            <a href="adminforgotpassword.php">Forgot Password?</a>
-        </div>
+   
     </div>
 </div>
 

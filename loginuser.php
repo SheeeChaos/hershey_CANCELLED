@@ -3,7 +3,7 @@ include('clientPartials/clientHeaderuser.php');
 ob_start();
 ?>
 
-<div class="section container loginPage flex">
+<div class="section loginPage flex">
     <div class="pageContent">
         <h1 class="title">Login Here!</h1>
         <p>Please be authentic!</p>
@@ -74,7 +74,7 @@ ob_start();
                 <a href="userforgotpassword.php">Forgot Password?</a>
             </div>
         </form>
-
+        
     </div>
 
 </div>

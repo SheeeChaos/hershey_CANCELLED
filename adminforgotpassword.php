@@ -5,7 +5,7 @@ ob_start();
 
 ?>
 
-<div class="section container loginPage flex">
+<div class="section loginPage flex">
     <div class="pageContent">
         <h1 class="title">Forgot Password</h1>
 
@@ -37,7 +37,6 @@ ob_start();
                 <span>Back to </span><a href="login.php">login!</a>
             </div>
         </form>
-        <img src="./Assests/logo2.png" alt="">
     </div>
     <img src="./Assests/drinks.png" alt="" class="designImage1">
     <img src="./Assests/floating1.png" alt="" class="designImage2">

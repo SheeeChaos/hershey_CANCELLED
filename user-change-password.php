@@ -1,4 +1,8 @@
 <?php
+include('clientPartials/clientHeaderuser.php');
+ob_start();
+?>
+<?php
 
 $msg = "";
 
@@ -49,45 +53,41 @@ if (isset($_GET['token'])) {
 ?>
 
 
-<!DOCTYPE html>
-<html lang="zxx">
-<head>
-    <title>Reset Password</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8" />
-    <meta name="keywords" content="Reset Password" />
-    <link href="//fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css" type="text/css" media="all" />
-    <script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="img/logo.png" type="image/x-icon">
-</head>
-<body>
-    <section class="w3l-mockup-form">
-        <div class="container">
-            <div class="workinghny-form-grid">
-                <div class="main-mockup">
-                    <div class="w3l_form align-self">
-                        <div class="left_grid_info">
-                            <img src="img/image3.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="content-wthree">
-                        <h2>Reset Password</h2>
-                        <p>Please enter your new password.</p>
-                        <?php echo $msg; ?>
+<title>Hershey's Groceries | Reset Password</title>
 
-                        <form action="" method="post">
-                            <input type="password" class="password" name="password" placeholder="Enter New Password" required>
-                            <input type="password" class="confirm-password" name="confirm-password" placeholder="Confirm New Password" required>
-                            <button name="submit" class="btn" type="submit">Reset Password</button>
-                        </form>
-                        <div class="social-icons">
-                            <p>Back to! <a href="loginuser.php">Login</a>.</p>
+<section class="section container loginPage flex">
+    <div class="pageContent">
+        <div class="workinghny-form-grid">
+            <div class="main-mockup">
+                <div class="w3l_form align-self">
+                    <div class="left_grid_info">
+                        <img src="img/image3.svg" alt="">
+                    </div>
+                </div>
+                <div class="content-wthree">
+                    <h1 class="title">Customer Change Password</h1>
+                    <p>Please enter your new password.</p>
+                    <?php echo $msg; ?>
+
+                    <form action="" method="post">
+                        <div class="input">
+                            <input type="password" class="password" name="password" placeholder="Enter New Password"
+                                required>
+                            <input type="password" class="confirm-password" name="confirm-password"
+                                placeholder="Confirm New Password" required>
+                            <button name="submit" class="btn flex" type="submit">Reset Password</button>
                         </div>
+                    </form>
+                    <div class="social-icons">
+                        <p>Back to! <a href="login.php">Login</a>.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-</body>
-</html>
+    </div>
+    <img src="./Assests/floating1.png" alt="" class="designImage2">
+</section>
+
+<?php
+include('clientPartials/clientFooteruser.php');
+?>

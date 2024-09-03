@@ -3,7 +3,7 @@ include('clientPartials/clientHeaderuser.php');
 ob_start();
 ?>
            
-    <div class="section container loginPage flex">
+    <div class="section loginPage flex">
           <div class="pageContent">
                 <h1 class="title">Register Here!</h1>
             

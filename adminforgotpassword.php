@@ -1,8 +1,6 @@
 <?php
 include('clientPartials/clientHeaderuser.php');
-
 ob_start();
-
 ?>
 
 <div class="section loginPage flex">

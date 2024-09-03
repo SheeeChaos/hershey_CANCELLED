@@ -96,9 +96,9 @@ p {
 .sectionIntro {
   text-align: center;
   width: 100%;
-  margin: 2rem 0 2rem 0;
-  padding: 2rem;
-  background: var(--primaryColor);
+  margin-bottom: 2rem;
+  background: var(--secondaryColor);
+  padding: 2rem 1rem;
   border-radius: var(--borderRadius);
 }
 .sectionIntro .secTitle {
